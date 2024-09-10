@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: larger;
+        }
+        .drugs{
+            width: 1050px;
+            background-color: rgba(0,0,0,0.2);
+            height:700px ;
+            display: flex;
+            flex-direction: column;
+            justify-content:center; 
+            align-items: center;
+        }
+        table,tr,td{
+            border: 2px solid black;
+            border-radius: 5px;
+
+        }
+        table{
+            background-color: rgba(0,0,0,0.4);
+            width: 1000px;
+            height: 600px ;
+           
+        }
+        input{
+            background-color: rgba(0,0,0,0);
+            font-weight: bold;
+        }
+        #pharmacy{
+            width: 98%;
+            height: 40%;
+        }
+        ::placeholder{
+            color: white;
+        }
+       
+        #location{
+            width: 98%;
+            height: 40%;
+        }
+        #city{
+            width: 98%;
+            height: 40%;
+        }
+        #owner{
+            width: 98%;
+            height: 40%;
+        }
+        #contact{
+            width: 98%;
+            height: 40%;
+        }
+        #email{
+            width: 98%;
+            height: 40%;
+        }
+        #link{
+            width: 98%;
+            height: 40%;
+        }
+        #outlets{
+            width: 98%;
+            height: 40%;
+        }
+        #primary{
+            width: 98%;
+            height: 40%;
+        }
+        #cost{
+            width: 98%;
+            height: 40%;
+        }
+        #chain{
+            width: 98%;
+            height: 40%;
+        }
+        #button{
+            color: brown;
+            padding: 5px;
+            margin-left: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="drugs">
+        <h2 style="background-color:brown; color: white; width:990px; height: 40px; border-radius: 5px; display: flex; justify-content: center; align-items: center; margin-left: px;">Mercury Drug Delivery Service-Partner Invite</h2>
+        <table>
+            <form action="">
+                <tr>
+                    <td colspan="3"><input type="text" name="" id="pharmacy" placeholder="Pharmacy name*" ></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="" id="location" placeholder="Pin(Primary Location)*">
+                    </td>
+                    <td>
+                        <input type="text" id="city" placeholder="City*">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="" id="owner" placeholder="Pharmacy owner*"></td>
+                    <td><input type="number" name="" id="contact" placeholder="Phone number*"></td>
+                </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="email" id="email" placeholder="Email*">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3"><input type="text" id="link" placeholder="Website Link/online listing link"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" name="" id="outlets" placeholder="Number of outlets*">
+                </td>
+                <td>
+                    <input type="text" name="" id="primary" placeholder="Primary Area of outlet*">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="" id="cost" placeholder="Minimum purchase cost*">
+                </td>
+                <td>
+                    <input type="text" name="" id="chain" placeholder="Establishment:Independant Chain*">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" rowspan="" style="font-weight: bold;">
+                    <label for="Medicines avaliable:"  style="margin-left: 3px;">Medicines avaliable:</label>
+                    <input type="checkbox" name="" id=""  style="margin-left: 6px;">
+                    <label for="General Sales List Medicines(GSL)">General Sales List Medicines(GSL)</label>
+                    <input type="checkbox" name="" id=""  style="margin-left: 6px;">
+                    <label for="Pharmacy Medicines (P)">Pharmacy Medicines (P)</label>
+                    <input type="checkbox" name="" id=""  style="margin-left: 6px;">
+                    <label for="Prescription only Medicines(POM)">Prescription only Medicines(POM)</label>
+                    <input type="checkbox" name="" id=""  style="margin-left: 6px;">
+                    <label for="Controlled Drugs(CDs)">Controlled Drugs(CDs)</label>
+                  
+                </td>
+            </tr>
+            <tr>
+                <td  style="font-weight: bold;">
+                <label for="Retail Drug License(Jpeg/PDF)*">Retail Drug License(Jpeg/PDF)*</label><br>
+                <input type="file" name="license" id="license"></td>
+                <td  style="font-weight: bold;">
+                    <label for="">GSTIN/PAN*</label><br>
+                    <input type="file" name="gst" id="gst"></td>
+                </td>   
+            </tr>
+            <tr>
+                <td  style="font-weight: bold;">
+                    <label for="">FSSAI(Jpeg/PDF)*</label><br>
+                    <input type="file" name="fssai" id="fssai">
+                </td>
+                <td  style="font-weight: bold;">
+                    <label for="">Facade/Pharmacy-shelves?Refridgerator(Jpeg)*</label><br>
+                    <input type="file" name="fssai" id="fssai">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="border: hidden;">
+            <input type="checkbox" name="" id="" style=" margin-left: 10px;">
+          <label for="link">
+            <a href="I agree to terms of services">I agree to terms of services</a>
+          </label>
+        </tr>
+    </td>
+    <tr>
+        <td colspan="3" style="border: hidden; color: brown; background-color: rgba(0,0,0,0);">
+     
+          <input type="button" name="" id="button" value="submit">
+        </td>
+        </tr>
+            </form>
+        </table>
+    </div>
+</body>
+</html>

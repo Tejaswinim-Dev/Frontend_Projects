@@ -1,0 +1,1494 @@
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.video-background {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    margin-bottom: 0px;
+}
+
+.content {
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    height: 100%;
+    padding-bottom: 150px;
+}
+
+
+.main {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    background-color: #161616;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon1 svg {
+    height: 20px;
+    width: 20px;
+    padding: 3px;
+    fill: white;
+    opacity: 0.5;
+}
+
+.icon1 svg:hover {
+    opacity: 1;
+}
+
+.icon2 svg {
+    height: 18px;
+    width: 18px;
+    padding: 3px;
+    fill: white;
+    opacity: 0.5;
+}
+
+.icon2 svg:hover {
+    opacity: 1;
+}
+
+.icon3 svg {
+    height: 28px;
+    width: 28px;
+    padding: 3px;
+    fill: white;
+    opacity: 0.5;
+}
+
+.icon3 svg:hover {
+    opacity: 1;
+}
+
+
+.easports1 {
+    height: 40px;
+    width: 40px;
+    border-radius: 90%;
+}
+
+.nav2 {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 60px;
+    padding: 0 20px;
+    position: sticky;
+    top: 40px;
+    z-index: 1;
+}
+
+.gamesndnews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.games span {
+    cursor: pointer;
+
+}
+
+.games span:hover {
+    color: #255AF6;
+}
+
+.dropdown {
+    color: white;
+    margin-left: 70px;
+    font-size: x-large;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+
+}
+
+.dropdown span {
+    margin-top: 10px;
+}
+
+.dropdown svg {
+    margin-left: 5px;
+    width: 13px;
+    height: 13px;
+}
+
+.dropdown .maingame:hover .dropdown svg {
+    transform: rotate(90deg);
+}
+
+.gamesndnews .games .dropdown svg path {
+    fill: white;
+}
+
+.games span :hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+.dropdown-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.dropdown-options span {
+    display: none;
+
+}
+
+.games:hover .dropdown-options span {
+    display: block;
+    color: white;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.games:hover .dropdown-options span:hover {
+    color: #255AF6;
+}
+
+.News {
+    color: white;
+    margin-left: 35px;
+    cursor: pointer;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.News:hover {
+    color: #255AF6;
+
+}
+
+.easports {
+    height: 40px;
+    cursor: pointer;
+}
+
+.marquee-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    color: white;
+    background-color: rgb(39, 106, 252);
+    padding: 10px 0px 10px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.marquee-container span {
+    padding-left: 50px;
+    animation: marquee 5s linear infinite;
+    white-space: nowrap;
+    font-size: xx-large;
+    color: white;
+    font-weight: bolder;
+
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.part2 {
+    background-color: #161616;
+    position: relative;
+    bottom: 50px;
+    height: 1800px;
+
+}
+
+.part2 h2 {
+    padding-top: 90px;
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 40px;
+    font-weight: bolder;
+    color: white;
+}
+ 
+
+
+.part21 {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.part21 img {
+    width: 400px;
+    height: 400px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+    margin-left: 60px;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+
+.part21 img:nth-child(1) {
+    animation-delay: 1.2s;
+}
+
+.part21 img:nth-child(2) {
+    animation-delay: 1.4s;
+}
+
+.part21 img:nth-child(3) {
+    animation-delay: 1.6s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.position-relative11{
+    position: relative;
+    display: inline-block;
+    background-image: url(https://drop-assets.ea.com/images/7pPbAYeWNMDqdu6AIB8lzN/95566694161234e1dba87aabd507e232/M25_Keyart_1x1__1_.jpg?w=600);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 350px;
+    height: 350px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+    margin-left: 60px;
+    margin-bottom: 70px;
+    cursor: pointer;
+}
+.position-relative11 img{
+    margin-top: 160px;
+    padding-left:35px;
+    
+}
+.overlay11 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 352px;
+    height:422px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(90deg,
+    rgba(13,16,66,0.9),
+    rgba(255,71,71,0.9));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    z-index: 1; 
+     
+}
+.position-relative11:hover img.Picture_image__7M4gK {
+    visibility: hidden;
+}
+
+.position-relative11:hover .overlay11 {
+    opacity: 1;
+}
+.part21 .position-relative11 img{
+    transition: transform 0.3s linear;
+    z-index: 1;
+}
+.position-relative11:hover .position-relative11 img{
+    transform: translateY(-40px);
+}
+
+.part21 .position-relative12 img{
+    transition: transform 0.3s linear;
+    z-index: 1;
+}
+.position-relative12:hover .position-relative12 img{
+    transform: translateY(-40px);
+}
+
+.part21 .position-relative13 img{
+    transition: transform 0.3s linear;
+    z-index: 1;
+}
+
+.overlay11 .btn,.overlay12 .btn,.overlay13 .btn,.overlay21 .btn,.overlay22 .btn,.overlay23 .btn,.overlay31 .btn,.overlay32 .btn,.overlay33 .btn {
+    margin-bottom: 10px;
+}
+.position-relative12 {
+    position: relative;
+    display: inline-block;             
+    background-image: url(https://media.contentapi.ea.com/content/dam/gin/images/2024/05/cfb25-gametile-1x1.jpg.adapt.crop1x1.767p.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 350px;
+    height: 350px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+    margin-left: 60px;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+.position-relative12 img{
+    margin-top: 160px;
+    padding-left:35px;
+    
+}
+.overlay12 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 352px;
+    height:422px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(90deg,
+    rgba(13,16,66,0.9),
+    rgba(255,71,71,0.9));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    z-index: 1; 
+}
+.position-relative12:hover img.eapl-local-nav__shelf-logo{
+    visibility: hidden;
+}
+
+
+.position-relative12:hover .overlay12 {
+    opacity: 1;
+}
+
+
+.position-relative13 {
+    position: relative;
+    display: inline-block;
+    background-image: url( https://media.contentapi.ea.com/content/dam/gin/images/2024/02/f124-gametile-1x1.jpg.adapt.crop1x1.767p.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 350px;
+    height: 350px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+    margin-left: 60px;
+    margin-bottom: 80px;
+    cursor: pointer;
+    
+
+}
+.position-relative13 img{
+    margin-top: 160px;
+    padding-left:35px;
+    
+}
+.overlay13 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 352px;
+    height:422px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(90deg,
+    rgba(13,16,66,0.9),
+    rgba(255,71,71,0.9));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    z-index: 1; 
+}
+.overlay11 img, .overlay12 img,.overlay13 img{
+  margin-bottom: 10px;
+   
+}
+.position-relative13:hover img.eapl-local-nav__shelf-logo{
+    visibility: hidden;
+}
+
+.position-relative13:hover .overlay13 {
+    opacity: 1;
+}
+
+.part22 {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.part22 img {
+    width: 400px;
+    height: 400px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp2 0.5s ease-out forwards;
+    margin-left: 60px;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+
+.part22 img:nth-child(1) {
+    animation-delay: 2.2s;
+}
+
+.part22 img:nth-child(2) {
+    animation-delay: 2.4s;
+}
+
+.part22 img:nth-child(3) {
+    animation-delay: 2.6s;
+}
+
+@keyframes fadeInUp2 {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.position-relative21 {
+    position: relative;
+    display: inline-block;
+    background-image: url(https://media.contentapi.ea.com/content/dam/gin/images/2023/09/wrc-gamebox-1x1.jpg.adapt.crop1x1.767p.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 350px;
+    height: 350px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+    margin-left: 60px;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+.position-relative21 img{
+    margin-top: 160px;
+    padding-left:35px;
+}
+.overlay21 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 352px;
+    height:422px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(90deg,
+    rgba(13,16,66,0.9),
+    rgba(255,71,71,0.9));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    z-index: 1; 
+}
+.overlay21 img, .overlay22 img,.overlay23 img{
+    margin-bottom: 10px;
+     
+  }
+
+.position-relative21:hover img.eapl-local-nav__shelf-logo{
+    visibility: hidden;
+}
+.position-relative21:hover .overlay21 {
+    opacity: 1;
+}
+
+
+.position-relative22 {
+    position: relative;
+    display: inline-block;
+    background-image: url( https://media.contentapi.ea.com/content/dam/gin/images/2023/09/ufc-5-keyart.jpg.adapt.crop1x1.767p.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 350px;
+    height: 350px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+    margin-left: 60px;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+.position-relative22 img{
+    margin-top: 160px;
+    padding-left:35px;
+    
+}
+.overlay22 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 352px;
+    height:422px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(90deg,
+    rgba(13,16,66,0.9),
+    rgba(255,71,71,0.9));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    z-index: 1; 
+}
+.position-relative22:hover img.eapl-local-nav__shelf-logo{
+    visibility: hidden;
+}
+.position-relative22:hover .overlay22 {
+    opacity: 1;
+}
+
+.position-relative23 {
+    position: relative;
+    display: inline-block;
+    background-image: url( https://media.contentapi.ea.com/content/dam/gin/images/2023/08/nhl24-eacom-gin-asset-1x1.jpg.adapt.crop1x1.767p.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 350px;
+    height: 350px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+    margin-left: 60px;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+.position-relative23 img{
+    margin-top: 160px;
+    padding-left:35px;
+}
+.overlay23 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 352px;
+    height:422px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(90deg,
+    rgba(13,16,66,0.9),
+    rgba(255,71,71,0.9));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    z-index: 1; 
+}
+
+.position-relative23:hover img.eapl-local-nav__shelf-logo{
+    visibility: hidden;
+}
+.position-relative23:hover .overlay23 {
+    opacity: 1;
+}
+
+.part23 {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.part23 img {
+    width: 400px;
+    height: 400px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp1 0.5s ease-out forwards;
+    margin-left: 60px;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+
+.part23 img:nth-child(1) {
+    animation-delay: 3.2s;
+}
+
+.part23 img:nth-child(2) {
+    animation-delay: 3.4s;
+}
+
+.part23 img:nth-child(3) {
+    animation-delay: 3.6s;
+}
+
+@keyframes fadeInUp1 {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.position-relative31 {
+    position: relative;
+    display: inline-block;
+    background-image: url(https://media.contentapi.ea.com/content/dam/gin/images/2023/07/fc24.jpeg.adapt.crop1x1.767p.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 350px;
+    height: 350px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+    margin-left: 60px;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+.position-relative31 img{
+    margin-top: 160px;
+    padding-left:35px;
+    
+}
+.overlay31 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 352px;
+    height:422px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(90deg,
+    rgba(13,16,66,0.9),
+    rgba(255,71,71,0.9));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    z-index: 1; 
+}
+
+.position-relative31:hover img.eapl-local-nav__shelf-logo{
+    visibility: hidden;
+}
+.overlay31 img, .overlay32 img,.overlay33 img{
+    margin-bottom: 10px;
+     
+  }
+
+
+.position-relative31:hover .overlay31 {
+    opacity: 1;
+    
+}
+
+.position-relative32 {
+    position: relative;
+    display: inline-block;
+    background-image: url(https://media.contentapi.ea.com/content/dam/gin/images/2023/08/fc-mobile-keyart.jpg.adapt.crop1x1.767p.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 350px;
+    height: 350px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+    margin-left: 60px;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+.position-relative32 img{
+    margin-top: 160px;
+    padding-left:35px;
+    
+}
+.overlay32 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 352px;
+    height:422px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(90deg,
+    rgba(13,16,66,0.9),
+    rgba(255,71,71,0.9));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    z-index: 1; 
+}
+.position-relative32:hover img.eapl-local-nav__shelf-logo{
+    visibility: hidden;
+}
+
+.position-relative32:hover .overlay32 {
+    opacity: 1;
+}
+.position-relative33{
+    position: relative;
+    display: inline-block;
+    background-image: url(https://media.contentapi.ea.com/content/dam/gin/images/2023/06/madden-24-keyart.jpg.adapt.crop1x1.767p.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 350px;
+    height: 350px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+    margin-left: 60px;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+.position-relative33 img{
+    margin-top: 160px;
+    padding-left:35px;
+    
+}
+.overlay33 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 352px;
+    height:422px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(90deg,
+    rgba(13,16,66,0.9),
+    rgba(255,71,71,0.9));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    z-index: 1; 
+}
+
+.position-relative33:hover img.Picture_image__7M4gK {
+    visibility: hidden;
+}
+
+.position-relative33:hover .overlay33 {
+    opacity: 1;
+}
+
+.overlay33 .btn {
+    margin-bottom: 10px;
+}
+.part21 a,.part22 a,.part23 a{
+    text-decoration: none;
+    color: white;
+}
+.overlay11 a,.overlay12 a,.overlay13 a,.overlay21 a,.overlay22 a,.overlay23 a,.overlay31 a,.overlay32 a,.overlay33 a{
+    opacity: 0.5;
+}
+.overlay11 a:hover ,.overlay12 a:hover ,.overlay13 a:hover,.overlay21 a:hover,.overlay22 a:hover,.overlay23 a:hover,.overlay31 a:hover,.overlay32 a:hover,.overlay33 a:hover{
+    opacity: 1;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.button button {
+    text-align: center;
+    background-color: #EC244A;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    height: 50px;
+    width: 170px;
+    border: hidden;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.button button:hover {
+    transform: scale(1.05);
+}
+/*  */
+.card-with-text {
+    background-color: white;
+}
+
+.card-with-text h2 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+    margin-bottom: 60px;
+    color: black;
+    padding: 20px;
+}
+
+.card1-with-text {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@keyframes fadeInUp2 {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card11 img {
+    width: 350px;
+    height: 200px;
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+
+.card11 {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp3 0.5s ease-out forwards;
+    animation-delay: 4.2s;
+}
+
+@keyframes fadeInUp3 {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+
+.card11-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 210px;
+    margin-left: 20px;
+    background-color: #255AF6;
+    color: white;
+
+
+}
+
+.card11-text h3 {
+    font-size: 22px;
+    font-weight: bolder;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-self: center;
+
+}
+
+.card11-text span {
+
+    padding-left: 20px;
+    padding-right: 20px;
+    align-self: center;
+
+}
+
+.card12 img {
+    width: 350px;
+    height: 200px;
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+
+.card12 {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp4 0.5s ease-out forwards;
+    animation-delay: 4.6s;
+}
+
+@keyframes fadeInUp4 {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card12-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 210px;
+    margin-left: 20px;
+    background-color: #255AF6;
+    color: white;
+
+
+}
+
+.card12-text h3 {
+    font-size: 22px;
+    font-weight: bolder;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-self: center;
+
+}
+
+.card12-text span {
+
+    padding-left: 20px;
+    padding-right: 20px;
+    align-self: center;
+
+}
+
+.card13 img {
+    width: 350px;
+    height: 200px;
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+
+.card13 {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp5 0.5s ease-out forwards;
+    animation-delay: 5s;
+
+}
+
+@keyframes fadeInUp5 {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card13-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 210px;
+    margin-left: 20px;
+    background-color: #255AF6;
+    color: white;
+
+
+}
+
+.card13-text h3 {
+    font-size: 22px;
+    font-weight: bolder;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-self: center;
+
+}
+
+.card13-text span {
+
+    padding-left: 20px;
+    padding-right: 20px;
+    align-self: center;
+
+}
+
+.card2-with-text {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card21 img {
+    width: 350px;
+    height: 200px;
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+
+.card21 {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp6 0.5s ease-out forwards;
+    animation-delay: 5.4s;
+}
+
+@keyframes fadeInUp6 {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card21-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 210px;
+    margin-left: 20px;
+    background-color: #255AF6;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.card21-text h3 {
+    font-size: 22px;
+    font-weight: bolder;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-self: center;
+
+}
+
+.card21-text span {
+
+    padding-left: 20px;
+    padding-right: 20px;
+    align-self: center;
+
+}
+
+.card22 img {
+    width: 350px;
+    height: 200px;
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+
+.card22 {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp7 0.5s ease-out forwards;
+    animation-delay: 5.8s;
+}
+
+@keyframes fadeInUp7 {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card22-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 210px;
+    margin-left: 20px;
+    background-color: #255AF6;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.card22-text h3 {
+    font-size: 22px;
+    font-weight: bolder;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-self: center;
+
+}
+
+.card22-text span {
+    padding-left: 20px;
+    padding-right: 20px;
+    align-self: center;
+
+}
+
+.card23 img {
+    width: 350px;
+    height: 200px;
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+
+.card23 {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp8 0.5s ease-out forwards;
+    animation-delay: 6.2s;
+
+}
+
+@keyframes fadeInUp8 {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card23-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 210px;
+    margin-left: 20px;
+    background-color: #255AF6;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.card23-text h3 {
+    font-size: 22px;
+    font-weight: bolder;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-self: center;
+
+}
+
+.card23-text span {
+
+    padding-left: 20px;
+    padding-right: 20px;
+    align-self: center;
+
+}
+
+.button1 {
+    display: flex;
+    justify-content: center;
+}
+
+.button1 button {
+    text-align: center;
+    background-color: #EC244A;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    height: 50px;
+    width: 170px;
+    border: hidden;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.button1 button:hover {
+    transform: scale(1.05);
+}
+
+sup {
+    font-size: small;
+}
+
+.join-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 290px;
+    background-color: #255AF6;
+    color: white;
+}
+
+.together p {
+    font-weight: bolder;
+    font-size: 50px;
+    width: 500px;
+    margin-right: 180px;
+    word-spacing: 0.1em;
+}
+
+.join-button {
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+
+}
+
+.join-button button {
+    text-align: center;
+    background-color: #EC244A;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    height: 50px;
+    width: 170px;
+    border: hidden;
+    font-weight: bolder;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+.join-button button:hover {
+    transform: scale(1.05);
+}
+
+.info-main {
+    background-color: #252525;
+    height: 400px;
+
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    height: 150px;
+}
+
+.info1 {
+    padding-top: 45px;
+    font-size: large;
+
+}
+
+.info1 span {
+    padding-top: 30px;
+    padding-left: 20px;
+    cursor: pointer;
+
+}
+
+.info1 span:hover {
+    color: #255AF6;
+}
+
+.info2 {
+    padding-left: 250px;
+}
+
+.info2 h3 {
+    padding-top: 28px;
+
+
+}
+
+.info2-img {
+    display: flex;
+    justify-content: center;
+    fill: white;
+    width: 190px;
+    height: 190px;
+    margin-left: 8px;
+    align-items: flex-start;
+    cursor: pointer;
+
+}
+
+.info2-img svg {
+    padding-left: 25px;
+
+}
+
+.info2-img svg:hover {
+    transform: scale(1.09);
+}
+
+.end-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 300px;
+    height: 200px;
+
+
+}
+
+.end-part1 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.end-part1 span {
+    width: 80%;
+}
+
+.end-part1 img {
+    margin: 0px;
+    width: 180px;
+    height: 80px;
+
+}
+
+.end-part2 img {
+
+    margin-left: 100px;
+    width: 130px;
+    height: 150px;
+}
+
+.privacy-policy {
+    background-color: white;
+    height: 20px;
+
+
+}
+
+.privacy-policy-main {
+    display: flex;
+
+
+}
+
+.privacy-policy1 a {
+    text-decoration: none;
+    font-size: x-large;
+
+}
+
+.privacy-policy1 img {
+    margin-top: 30px;
+    width: 65px;
+    height: 65px;
+    margin-left: 190px;
+    margin-right: 20px;
+}
+
+.privacy-policy2 {
+    margin-top: 35px;
+    margin-bottom: 40px;
+    width: 50%;
+}
+
+.privacy-policy2 a {
+    font-size: 16px;
+
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    margin-left: 30px;
+    padding-bottom: 20px;
+    font-size: larger;
+
+}
+
+.pp-main {
+    display: flex;
+    flex-direction: row;
+
+    color: black;
+
+
+}
+
+.pp-1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 300px;
+    width: 70%;
+
+}
+
+.pp-11 a {
+    text-decoration: none;
+    color: black;
+    word-spacing: normal;
+    margin-left: 15px;
+    font-size: larger;
+}
+
+.pp-1 p {
+    margin-left: 13px;
+
+}
+
+.pp-2 img {
+    margin-left: 350px;
+    margin-top: 30px;
+}

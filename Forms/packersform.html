@@ -1,0 +1,182 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .atlas{
+            display: flex;
+            justify-content: center;
+        }
+        .atlas-img{
+            align-self:center;
+           margin-left: 100px;
+          
+        }
+        .larger-img{
+            width: 400px;
+           height: 500px;
+        }
+            
+        
+        .atlas-content{
+            background-color: rgb(55, 131, 131);
+            height: 960px;
+           
+        }
+        
+        table{
+            background-color:rgb(55, 131, 131);
+            width: 1000px;
+            height: 400px;
+        }
+    
+        table,tr,td{
+            border:2px solid white;
+            padding: 8px;
+            border-radius: 3px;
+            color: white;
+            font-size: large;
+        }
+        tr a{
+            color: white;
+        }
+        input[type="range"]{
+            width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <div class="atlas">
+        <div class="atlas-img">
+            <img src="./Screenshot 2024-06-13 125155.png" alt="" class="larger-img">
+        </div>
+        <div class="atlas-content">
+    <table>
+          <h2 style="background-color: white; color: brown; width: 450px; height: 40px; border-radius: 5px; display: flex; justify-content: center; align-items: center; margin-left: 255px;">ATLAS PACKERS AND MOVERS</h2>
+
+        <tr style= " color: white;">
+           
+            <td style=" border: hidden;">
+                <a href="Relocation-info">Relocation-info</a>
+            </td>
+        </tr>
+        <tr style=" color: white; ">
+            <td style="border: hidden;">
+                <a href="Personal-info">Personal-info</a>
+            </td>
+        </tr style="background-color: rgb(8, 74, 74); color: white;">
+            <tr>
+            <td style="border: hidden">
+                <a href="Get a quote!">Get a quote!</a>
+            </td>
+    
+        </tr>
+        <tr>
+            <td  colspan="4" style="color: brown; font-size:larger; font-weight: bold;" >Relocation Information</td>
+        </tr>
+        <tr>
+        <form action="">
+        
+                
+              <td colspan="" style="width: 60%;">
+              <select name="options" id="options" style="width:96%;">
+                <option value="select" hidden>Select your current city</option>
+                <option value="Amalapuram">Amalapuram</option>
+                <option value="Achutapuram">Achutapuram</option>
+                <option value="Bakanapalem">Bakanpalem</option>
+                <option value="Chodavaram">Chodavaram</option>
+                <option value="Gajuwaka">Gajuwaka</option>
+                <option value="Kurmanpalem">Kuramanpalem</option>
+                <option value="Steel Plant">Steel Plant</option>
+                <option value="Sriharipuram">Sriharipuram</option>
+                <option value="Sabbavaram">Sabbavaram</option>
+                <option value="Venkojipalem">Venkojipalem</option>
+                <option value="Yarada">Yarada</option>
+              </select>
+              </td>
+              <td colspan="2" style="width: 40%;">
+                <input type="date" id="date" style="width: 96%;">
+              </td>
+            </tr>
+            <tr >
+                
+                <label for="category">
+                    <td colspan="1">Select Category</td>
+                    <td colspan="2"><label for="Home Relocation">Home Relocation</label>
+                    <input type="radio" id="category" name="category">
+                    <label for="Family/Office Reloaction">Family/Office Relocation</label>
+                    <input type="radio" id="category" name="category">
+                </td>
+                </label>
+        
+        </tr>
+
+
+
+            <tr>
+
+                  <td  colspan="1" style="width: 50%;"><input type="text" placeholder="From address" style="width: 96%; height: 100px;" ></td>
+                  <td colspan="2" style="width: 50%;"><input type="text" placeholder="To address"style="width: 96%; height: 100px;"></td>
+                  
+            </tr>
+           <tr>
+            <td colspan="1">
+                <label for="distance">Distance in kms</label>
+            </td>
+            <td colspan="3">
+                <input type="range" name="distance" id="distance">
+            </td>
+           </tr>
+            <tr >
+                <td  colspan="4" style="color: brown ; font-size:larger; font-weight: bold;">Personal Information</td>
+            </tr>
+            <tr>
+                <td  colspan="1" style="width: 50%;">Customer Name</td>
+                <td colspan="2" style="width: 50%;"><input type="text" placeholder="Enter the customer name" style="width: 98%;"></td>
+            </tr>
+            <tr>
+            <td  colspan="1" style="width: 50%;">Phone Number</td>
+               <td colspan="2" style="width: 50%;"><input type="number" placeholder="Enter the phone number" style="width: 98%;"></td>
+            </tr>
+            <tr>
+            <td colspan="1" style="width: 50%;">Email id</td>
+            <td colspan="2" style="width: 50%;"><input type="email" placeholder="Enter the email id" style="width: 98%;"></td>
+            </tr>
+            <tr>
+                <td  colspan="4" style="color: brown; font-size: larger; font-weight: bold;">Get a qoute!</td>
+            </tr>
+            <tr>
+               <td rowspan="" style="width: 50%;">
+                 <label for="charges">Possible charges involved</label></td>
+               <td rowspan="">
+                <input type="checkbox">
+               <label for="">Packing Charges</label>
+                <input type="checkbox">
+                 <label for="">Loading charges</label> 
+                <input type="checkbox" > 
+                <label for="">Transporation charges</label>
+                <input type="checkbox">
+                 <label for="">Unloading charges</label>
+                 <input type="checkbox">
+                 <label for="">Unpacking charges</label>
+                 <input type="checkbox">
+                 <label for="">Escort charges</label>
+                 <input type="checkbox">
+                 <label for="">Octroi charges</label>
+               </td>
+               </tr>
+               <tr>
+                <td colspan="4">
+                            <a href="**Quote you receive will include service tax of 12.3%">**Quote you receive will include service tax of 12.3%</a>
+                </td>
+              </tr> 
+        </form>
+    
+    </table>
+    <input type="button" value="GET A QUOTE" onclick="alert('Button is clicked!')"    style="background-color: white; color: brown; border: 2px solid black; padding: 10px; margin: 20px; cursor: pointer; border-radius: 10px; font-weight: bold; ">
+</div>
+</div>
+</body>
+</html>

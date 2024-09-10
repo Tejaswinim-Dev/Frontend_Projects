@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .beauty{
+            background-color: black;
+            width: 500px;
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            display: flex;
+            border: none;
+            color: white;
+            border-radius: 5px;
+           
+        }
+       
+        table {
+            width: 400px;
+
+        }
+        table,
+        tr,
+        td {
+            border: 2px solid rgb(122, 91, 32);
+            border-radius: 5px;
+            background-color:black;
+            padding: 10px;
+        }
+
+        ::placeholder {
+            color:blue;
+           opacity: 1;
+           font-weight: 400;
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="beauty">
+    <h3 style=" display: flex;justify-content: center;align-items: center; background-color:rgba(255, 255, 255,0.2); color: white;width: 400px;text-align: center; height: 35px; border-radius: 5px;">Beauty Care Center - Appointment</h3>
+    <table>
+        <form action="" method="">
+            <tr>
+                <td colspan="">
+                    <label for="Name" style=" padding: 5px; color: white;">Name</label>
+                </td>
+                <td colspan="">
+                    <input style="border-radius: 5px; border: 2px solid rgb(161, 109, 13); " type="text" id="Name"
+                        placeholder="Enter your name" width="96%">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="" style=" padding: 5px; color: white;">Gender</label>
+                </td>
+                <td>
+
+                    <label for="gender" style="color: white;"> Female</label>
+                    <input type="radio" id="name" name="gender">
+                    <label for=""  style="color: white;">Male</label>
+                    <input type="radio" id="name" name="gender">
+                    <label for=""  style="color: white;">Others</label>
+                    <input type="radio" id="name" name="gender">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="Email" style=" padding: 5px;  color: white;">Email</label>
+                </td>
+                <td>
+                    <input type="email" id="Email" placeholder="Example:-user@123.gmail.com" width="96%">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Mobile Number" style="color: white; padding: 5px;">Mobile Number</label>
+                </td>
+                <td>
+                    <input type="number" id="Mobile No" placeholder="Enter  your mobile number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Services" style=" padding: 5px; color: white;">Services</label>
+                </td>
+                <td>
+                    <input type="text" id="Services" placeholder="Enter your services">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Date" style=" padding: 5px; color: white;">Date</label>
+                </td>
+                <td>
+                    <input type="date" id="Date" style="color: blue;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Time" style=" padding: 5px; color: white;">Time</label>
+                </td>
+                <td>
+                    <input type="time" id="Time" style="color: blue;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="" style=" padding: 5px;color: white; ">Address</label>
+                </td>
+                <td>
+                    <textarea name="Address" id="Address" rows="5" cols="30" style="color: blue;">Enter your Address</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="border: hidden; width: 100%;">
+                    <input type="checkbox" id="Verification">
+                    <a href="">I agree to terms of service and privacy policy </a>
+                </td>
+            </tr>
+            <tr>
+                <td style="border: hidden;">
+                    <label for="submit" style="padding: 5px;"></label>
+                    <input type="submit" style=" background-color: black;color: white;">
+                </td>
+            </tr>
+
+
+        </form>
+    </table>
+</div>
+</body>
+
+</html>

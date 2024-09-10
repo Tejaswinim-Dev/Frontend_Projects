@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .flight{
+            display: flex;
+        }
+        .flight-img{
+            align-self:center;
+           margin-left: 100px;
+        }
+        .flight-img img{
+            width: 450px;
+            height: 450px;
+        }
+            
+        
+        .flight-content{
+            background-color: rgb(7, 133, 7);
+           
+        }
+        
+        table{
+            background-color: rgb(7, 133, 7);
+            width: 900px;
+        }
+    
+        table,tr,td{
+            border:2px solid white;
+            padding: 8px;
+            border-radius: 4px;
+            color: white;
+            font-size: large;
+        }
+        tr a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="flight">
+        <div class="flight-img">
+            <img src="./Screenshot 2024-06-11 172212.png" alt="">
+        </div>
+        <div class="flight-content">
+    <table>
+          <h2 style="background-color: white; color: brown; width: 850px; height: 40px; border-radius: 5px; display: flex; justify-content: center;align-items: center; margin-left: 25px;">ELITE TRAVEL MANAGEMENT</h2>
+
+        <tr style="background-color: rgb(68, 68, 172); color: white;">
+            <td>
+                <a href="Travel-info">Travel-info</a>
+            </td>
+            <td>
+                <a href="Personal-info">Personal-info</a>
+            </td>
+            <td>
+                <a href="Activities Prefences">Activities Prefences</a>
+            </td>
+        </tr>
+        <tr style="background-color: rgb(68, 68, 172)">
+            <td  colspan="3" style="color: brown; font-size: xx-large; font-weight: bold;">Travel Information</td>
+        </tr>
+        <tr style="background-color: rgb(68, 68, 172)">
+        <form action="">
+        
+                
+              <td><label for="options" >Select your travel desination : 
+        </label><br>
+              <select name="options" id="options" style="width: 96%;">
+                <option value="select" hidden>select</option>
+                <option value="America">America</option>
+                <option value="Australia">Australia</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Canada">Canada</option>
+                <option value="England">England</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="Japan">Japan</option>
+                <option value="India">India</option>
+                <option value="Switerzaland">Switerzaland</option>
+                <option value="New Zealand">New Zealand</option>
+              </select>
+              </td>
+              <td>
+                <label for="date" >Date of departure :
+                </label><br>
+                <input type="date" id="date" style="width: 96%;">
+              </td>
+              <td>
+                <label for="date" >Date of arrival :
+                </label><br>
+                <input type="date" id="date" style="width: 96%;">
+              </td>
+            </tr>
+            <tr style="background-color: rgb(68, 68, 172)">
+
+                  <td><input type="text" placeholder="No of kids" style="width: 96%;" ></td>
+                  <td><input type="text" placeholder="No of teens"style="width: 96%;"></td>
+                  <td><input type="text" placeholder="No of adults" style="width: 96%;"></td>
+            </tr>
+            <tr style="background-color: rgb(68, 68, 172)">
+                
+                    <label for="visa">
+                        <td>Visa Assistance</td>
+                        <td><label for="yes">Yes</label>
+                        <input type="radio" id="visa" name="visa">
+                    </td>
+                    <td><label for="no">No</label>
+                        <input type="radio" id="visa" name="visa">
+                    </td>
+                    </label>
+            
+            </tr>
+            <tr style="background-color: rgb(68, 68, 172)">
+                <td  colspan="3" style="color: brown ; font-size: xx-large; font-weight: bold;">Personal Information</td>
+            </tr>
+            <tr style="background-color: rgb(68, 68, 172)">
+                <td>Customer Name</td>
+                <td colspan="2"><input type="text" placeholder="Enter the customer name" style="width: 98%;"></td>
+            </tr>
+            <tr style="background-color: rgb(68, 68, 172)">
+            <td>Phone Number</td>
+               <td colspan="2"><input type="number" placeholder="Enter the phone number" style="width: 98%;"></td>
+            </tr>
+            <tr style="background-color: rgb(68, 68, 172)">
+            <td>Email id</td>
+            <td colspan="2"><input type="email" placeholder="Enter the email id" style="width: 98%;"></td>
+            </tr>
+            <tr style="background-color: rgb(68, 68, 172)">
+                <td  colspan="3" style="color: brown; font-size: xx-large; font-weight: bold;">Activities Preferences</td>
+            </tr>
+            <tr style="background-color:rgb(68, 68, 172) ;">
+                <label for="prefernce"></label>
+               <td>
+                <input type="checkbox">
+               <label for="">Museums & Historic Sites</label>
+                
+               </td>
+               <td>
+                <input type="checkbox">
+                 <label for="">Culture</label>
+                
+               </td>
+               <td>
+                <input type="checkbox"> 
+                <label for="">Beaches</label>
+                
+               </td>
+            </tr>
+            <tr style="background-color:rgb(68, 68, 172) ;">
+    
+               <td>
+                <input type="checkbox">
+                 <label for="">Shopping</label>
+               
+               </td>
+               <td> <input type="checkbox">
+                 <label for="">Wildlife</label>
+               
+               </td>
+               <td> <input type="checkbox"> 
+                <label for="">Relaxing</label>
+               
+               </td>
+            </tr>
+            <tr style="background-color: rgb(68, 68, 172);">
+                <td colspan="3"><a href="">**Click here to unlock exclusive offers</a></td>
+            </tr>
+            
+        </form>
+    
+    </table>
+    <input type="button" value="BUILD PACKAGE" onclick="alert('Button is clicked!')"    style="background-color: white; color: brown; border: 2px solid black; padding: 10px; margin: 20px; cursor: pointer; border-radius: 10px; font-weight: bold; ">
+</div>
+</div>
+</body>
+</html>

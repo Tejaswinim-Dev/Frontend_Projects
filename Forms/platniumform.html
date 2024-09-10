@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .platnium{
+            display: flex;
+            justify-content: center;
+          
+            background-color: rgb(71, 177, 71);
+            width: 1100px;
+            height: 750px;
+        }
+        .larger-img{
+            width: 500px;
+            height: 100%;
+        }
+        
+        
+        table,tr,td{
+            border: 2px solid white;
+        }
+        table{
+            margin-left: 10px;
+            background-color: rgb(203, 181, 139);
+            border-radius: 10px;
+            height: 600px;
+            width: 580px;
+         
+        }
+        form{
+            border: 2px solid white;
+        }
+        label{
+            color:rgb(67, 4, 67);
+        }
+        .location{
+            width: 96%;
+        }
+        #details{
+            width: 96%;
+        }
+        #status{
+            width: 96%;
+        }
+        #type{
+            width: 96%;
+        }
+    </style>
+</head>
+<body>
+    <div class="platnium">
+        <div class="platnium-img">
+            <img src="./Screenshot 2024-06-17 092719.png" alt="" class="larger-img">
+        </div>
+        <div class="platnium-content">
+            <h2 style="background-color: white;color: brown;display: flex;justify-content: center; align-items: center;width: 570px;height: 40px; border-radius: 5px; margin-left: 15px;">Platnium Properties</h2>
+            <div class="main">
+            <table>
+                <form action="">
+                    <tr>
+                        <td><a href="Properties-info">Properties-info</a></td>
+                        <td><a href="Personal-info">Personal-info</a></td>
+                        <td><a href="Extra Feature">Extra Feature</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="color:red;font-size: larger;"><span>Property Information</span></td>
+                    </tr>
+                    <tr>
+                        <td 
+                            <label for="Select property Type:">Select property Type:</label>
+                            <select name="details" id="details" >
+                                <option value="">Select</option>
+                                <option value="Apartment">Apartment</option>
+                                <option value="Villa">Villa</option>
+                                <option value="Individual House">Individual House</option>
+                                <option value="Compact House">Compact House</option>
+                            </select>
+                        </td>
+                        <td >
+                            <label for="BHK">BHK Type</label><br>
+                          <select name="type" id="type">
+                            <option value="">Select</option>
+                            <option value="1 BHK">1 BHK</option>
+                            <option value="2 BHK">2 BHK</option>
+                            <option value="3 BHK">3 BHK</option>
+                            <option value="4 BHK">4 BHK</option>
+                          </select>
+                        </td>
+                        <td>
+                            <label for="Select Possesion status">Select Possesion status</label>
+                            <select name="status" id="status">
+                                <option value="">Select</option>
+                                <option value="Plot">Plot</option>
+                                <option value="Under Construction">Under Construction</option>
+                                <option value="Semi Furnished">Semi Furnished</option>
+                                <option value="Reday to move">Ready to move</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="Price Range">Price Range</label></td>
+                        <td><input type="text" name="price" id="price" placeholder="From"></td>
+                        <td><input type="text" name="price" id="price" placeholder="To"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="location">Location</label></td>
+                        <td colspan="2"><input type="text" name="" id="" placeholder="Enter the location" class="location"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"style="color:red ;font-size: larger;"><span>Personal Information</span></td>
+                    </tr>
+                    <tr >
+                        <td  colspan="1" style="width: 50%;">Customer Name</td>
+                        <td colspan="2" style="width: 50%;"><input type="text" placeholder="Enter the customer name" style="width: 98%;"></td>
+                    </tr>
+                    <tr >
+                    <td  colspan="1" style="width: 50%;">Phone Number</td>
+                       <td colspan="2" style="width: 50%;"><input type="number" placeholder="Enter the phone number" style="width: 98%;"></td>
+                    </tr>
+                    <tr>
+                    <td colspan="1" style="width: 50%;">Email id</td>
+                    <td colspan="2" style="width: 50%;"><input type="email" placeholder="Enter the email id" style="width: 98%;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"style="color:red ;font-size: larger;"><span>Extra Feature</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="feature" id="feature">
+                            <label for="Parking">Parking</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="feature" id="feature">
+                            <label for="Swimming Pool">Swimming Pool</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="feature" id="feature">
+                            <label for="Super Market">Super Market</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="feature" id="feature">
+                            <label for="Park">Park</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="feature" id="feature">
+                            <label for="Library">Library</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="feature" id="feature">
+                            <label for="Play ground">Play ground</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                                    <a href="**Click here to uclock exclusive offers">**Click here to unclock exclusive offers</a>
+                        </td>
+                      </tr> 
+                    </div>
+                </form>
+            </table>
+            <input type="button" value="CHECK AVAILABILTY" onclick="alert('Button is clicked!')"    style="background-color: white; color: brown; border: 2px solid black; padding: 8px; margin: 20px; margin-bottom: 15px; cursor: pointer; border-radius: 10px; font-weight: bold; ">
+
+
+        </div>
+    </div>
+</body>
+</html>
