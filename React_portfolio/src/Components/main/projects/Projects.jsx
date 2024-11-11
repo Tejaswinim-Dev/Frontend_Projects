@@ -1,4 +1,7 @@
 import "./Projects.css"
+import PortfolioIcon from "../../../assets/images/portfolio.png";
+import EaIcon from "../../../assets/images/easports.png" 
+import EcomIcon from "../../../assets/images/ecom.png"
 
 function Project({img,p}){
     return(
@@ -20,9 +23,9 @@ function Project({img,p}){
 export function ProjectsCopy(){
     return(
         <div style={{display:"flex",justifyContent:"space-evenly"}}>
-            <Project img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsLUsCJ79wy3XfiWSki5ElIL8YTA59j02XfQ&s" p="Weather Application" />
-            <Project img="https://i.ytimg.com/vi/aTsdv8rrqfA/hqdefault.jpg" p="Resturant Website"/>
-            <Project img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxTTwUBocsybRwBjbo7-cbDlu4ZeThiCz4wA&s" p="Personal Portfolio Website"/>
+            <Project img={EcomIcon} p="React E-Com Website" />
+            <Project img={PortfolioIcon} p="Personal Portfolio React"/>
+            <Project img={EaIcon} p="EA Sports Clone"/>
 
             </div>
     )

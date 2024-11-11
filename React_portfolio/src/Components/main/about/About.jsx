@@ -7,8 +7,8 @@ function About() {
       <div className="main-text" id="Profile">
         <div>
           <h3>Hello👋,</h3>
-          <h1>I'm a Frontend Developer</h1>
-          <h2>I build User-Interface</h2>
+          <h1>I'm Tejaswini</h1>
+          <h2>Frontend Developer</h2>
         </div>
         <div className="links" id="Skills">
           <a href="mailto:tejaswinidev0@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#8121D0" class="bi bi-envelope" viewBox="0 0 16 16">
